@@ -64,32 +64,18 @@ class _loginScreenState extends State<loginScreen> {
               ),
             ),
           ),
-          Container(
+          Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.white,
-                width: 3,
-              ),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: ElevatedButton(
+            child: FilledButton(
               onPressed: () {},
               child: const Text('Entrar'),
             ),
           ),
-          Container(
+          Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.white,
-                width: 3,
-              ),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: ElevatedButton(
+            child: FilledButton(
               onPressed: () {},
-              style: ElevatedButton.styleFrom(
+              style: FilledButton.styleFrom(
                 backgroundColor: Colors.white,
               ),
               child: const Text(
