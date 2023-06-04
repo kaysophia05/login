@@ -15,11 +15,9 @@ class _loginScreenState extends State<loginScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Text(
-            'Bem Vindo De Volta!',
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-          ),
+          const Text('Bem Vindo De Volta!',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 29),
             child: Row(
@@ -43,6 +41,7 @@ class _loginScreenState extends State<loginScreen> {
             child: TextField(
               decoration: InputDecoration(
                 labelText: 'Login',
+                hintText: 'Digite seu e-mail',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                 ),
@@ -56,6 +55,7 @@ class _loginScreenState extends State<loginScreen> {
             child: TextField(
               decoration: InputDecoration(
                 labelText: 'Senha',
+                hintText: 'Digite sua senha',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                 ),
@@ -76,6 +76,28 @@ class _loginScreenState extends State<loginScreen> {
             child: ElevatedButton(
               onPressed: () {},
               child: const Text('Entrar'),
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            decoration: BoxDecoration(
+              border: Border.all(
+                color: Colors.white,
+                width: 3,
+              ),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+              ),
+              child: const Text(
+                'Sign in with Google',
+                style: TextStyle(
+                  color: Colors.black,
+                ),
+              ),
             ),
           ),
         ],
